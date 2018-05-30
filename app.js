@@ -79,7 +79,7 @@ app.get('/mine',function(req,res){ //mine blocks
     res.json(block)
 })
 
-app.post('/transactions',function(req,res){
+app.post('/transactions',function(req,res){ //list transactions 
 
   console.log(transactions)
 
@@ -95,7 +95,7 @@ app.post('/transactions',function(req,res){
 
 })
 
-app.get('/blockchain',function(req,res){
+app.get('/blockchain',function(req,res){ //outputs blockchain
 
   res.json(blockchain)
 

@@ -14,7 +14,7 @@ class Blockchain {
   addBlock(block) {
 
     if(this.blocks.length == 0) {
-      block.previousHash = "0000000000000000"
+      block.previousHash = "000" // nonces above 3 000 get rediculously hard to compute. 
       block.hash = this.generateHash(block)
     }
 
@@ -46,10 +46,10 @@ class Blockchain {
 
       let hash = sha256(block.key)
 
-      while(!hash.startsWith("00000")) {
+      while(!hash.startsWith("000")) {
         block.nonce += 1
         hash = sha256(block.key)
-        console.log(hash)
+      //  console.log(hash)
       }
 
       return hash

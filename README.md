@@ -1,6 +1,9 @@
 # blockchain
 first blockchain project
 
+# new ideas
+Make a blockchain game, where people connect to a server, which spawns a ledger where the servers all owned by an indavidual attempts to write it's name at the top of the ledger. Whoever has the most processing power wins. 
+
 ## This is a node server spawning app
 Servers are spawend via the command line ```node app.js <port>```
 
